@@ -1,219 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Denis Murithi Gitobu - Data Analyst</title>
   <style>
-    /* Reset & base */
-    * {
-      box-sizing: border-box;
-    }
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #1a1a1a;
-      color: #e0e0e0;
-      margin: 0;
-      padding: 0 20px 40px;
-      line-height: 1.6;
-    }
-    a {
-      color: #00b894;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
+      margin: 40px;
+      background-color: #eaf3f7;
+      color: #222;
     }
     header {
+      background-color: #007c91;
+      color: white;
+      padding: 20px;
       text-align: center;
-      padding: 40px 20px 20px;
-      border-bottom: 2px solid #00b894;
-      margin-bottom: 30px;
+      border-radius: 10px;
     }
-    header h1 {
-      font-size: 3rem;
+    h1 {
       margin: 0;
-      font-weight: 900;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      color: #00b894;
-    }
-    header p {
-      font-size: 1.2rem;
-      margin: 5px 0 0;
-      font-weight: 600;
-      color: #aaa;
+      font-size: 2.5em;
     }
     section {
+      background: white;
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 10px;
       max-width: 900px;
-      margin: 0 auto 40px;
-      padding: 0 20px;
-    }
-    h2 {
-      border-left: 5px solid #00b894;
-      padding-left: 10px;
-      margin-bottom: 15px;
-      font-size: 1.8rem;
-      text-transform: uppercase;
-      letter-spacing: 1.5px;
-      color: #00b894;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     }
     ul {
-      list-style: none;
-      padding-left: 0;
+      list-style-type: square;
+      padding-left: 20px;
     }
-    ul.skills li,
-    ul.projects li,
-    ul.experience li,
-    ul.education li {
-      background: #222;
-      margin-bottom: 12px;
-      padding: 12px 15px;
-      border-radius: 6px;
-      box-shadow: 1px 1px 6px rgba(0, 184, 148, 0.3);
+    .contact a {
+      display: block;
+      color: white;
+      margin-bottom: 5px;
+      text-decoration: none;
+      font-weight: bold;
     }
-    ul.skills li {
-      font-weight: 600;
-    }
-    ul.skills li strong {
-      color: #00b894;
-    }
-    ul.projects li strong,
-    ul.experience li strong,
-    ul.education li strong {
-      color: #00d28d;
-    }
-    ul.projects li,
-    ul.experience li {
-      line-height: 1.4;
-    }
-    ul.experience ul {
-      margin-top: 8px;
-      margin-left: 15px;
-      list-style: disc;
-      color: #bbb;
-    }
-    ul.experience ul li {
-      background: none;
-      box-shadow: none;
-      padding: 4px 0;
-      font-weight: 400;
-    }
-    .contact-info {
-      text-align: center;
-      margin-top: 15px;
-      font-weight: 600;
-      font-size: 1rem;
-    }
-    .contact-info a {
-      display: inline-block;
-      margin: 0 15px;
-    }
-    /* Responsive */
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 2.2rem;
-      }
-      h2 {
-        font-size: 1.5rem;
-      }
+    .contact a:hover {
+      text-decoration: underline;
+      color: #cce7ed;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Denis Murithi Gitobu</h1>
-    <p>Health Information Data Analyst | Data Analytics Professional</p>
-    <div class="contact-info">
-      <a href="tel:+254713089201">📞 +254 713 089 201</a>
-      <a href="tel:+254747089201">📞 +254 747 089 201</a>
-      <a href="mailto:iamdenis46@gmail.com">✉ iamdenis46@gmail.com</a>
-    </div>
-    <div class="contact-info" style="margin-top: 5px;">
-      <a href="https://github.com/murithidenisgitobu" target="_blank" rel="noopener">GitHub</a> |
-      <a href="https://www.linkedin.com/in/murithidenisgitobu/" target="_blank" rel="noopener">LinkedIn</a> |
-      <a href="https://medium.com/@murithidenisgitobu" target="_blank" rel="noopener">Medium</a>
+    <p>Data Analyst</p>
+    <div class="contact">
+      <a href="tel:+254713089201">📞 +254713089201</a>
+      <a href="tel:+254747089201">📞 +254747089201</a>
+      <a href="mailto:iamdenis46@gmail.com">✉️ iamdenis46@gmail.com</a>
+      <a href="https://github.com/murithidenisgitobu" target="_blank">GitHub: murithidenisgitobu</a>
+      <a href="https://www.linkedin.com/in/murithidenisgitobu/" target="_blank">LinkedIn: murithidenisgitobu</a>
+      <a href="https://medium.com/@murithidenisgitobu" target="_blank">Medium: @murithidenisgitobu</a>
     </div>
   </header>
 
   <section>
     <h2>Core Skills</h2>
-    <ul class="skills">
-      <li><strong>Python:</strong> Data analysis, automation, scripting</li>
-      <li><strong>SQL:</strong> Data extraction, transformation, reporting (MySQL, MS SQL)</li>
-      <li><strong>Data Visualization:</strong> Power BI, Tableau</li>
-      <li><strong>Microsoft Excel:</strong> Advanced analytics, pivot tables, dashboards</li>
-      <li><strong>API Development:</strong> RESTful services for data integration (FastAPI)</li>
-      <li><strong>Containerization:</strong> Docker for scalable deployment</li>
-      <li><strong>Data Storytelling:</strong> Presenting insights for business impact</li>
-      <li><strong>Predictive Analytics:</strong> Machine learning for forecasting (Scikit-Learn)</li>
-      <li><strong>Time Series Analysis:</strong> Trends, seasonality, forecasting</li>
-      <li><strong>Project & Workflow Tools:</strong> Scrum, Git & GitHub, JupyterLab, VSCode</li>
-      <li><strong>App Development:</strong> Streamlit for interactive ML apps</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Education</h2>
-    <ul class="education">
-      <li><strong>Bachelor's Degree in Health Records and Information Management</strong><br />Kenyatta University, Kenya</li>
-      <li><strong>Data Analytics Professional Certificate</strong><br />Azubi Africa, Greater Accra, Ghana</li>
+    <ul>
+      <li>Python – Data analysis, automation, and scripting</li>
+      <li>SQL – Data extraction, transformation, and reporting (MySQL & MS SQL)</li>
+      <li>Data Visualization – Power BI, Tableau</li>
+      <li>Microsoft Excel – Advanced analytics, pivot tables, and dashboards</li>
+      <li>API Development – FastAPI, RESTful services for data integration</li>
+      <li>Containerization – Docker for scalable deployment</li>
+      <li>Data Storytelling – Presenting insights for business impact</li>
+      <li>Predictive Analytics – Machine learning for forecasting (Scikit-Learn)</li>
+      <li>Time Series Analysis – Trends, seasonality, and forecasting</li>
+      <li>App Development – Streamlit for interactive dashboards</li>
+      <li>Version Control – Git & GitHub</li>
+      <li>Scrum & Agile Methodologies</li>
     </ul>
   </section>
 
   <section>
     <h2>Notable Projects</h2>
-    <ul class="projects">
-      <li>
-        <strong>Data Analysis Project on the Indian Start-Up Ecosystem</strong><br />
-        Conducted data cleaning, descriptive analytics, and dashboarding to extract valuable insights.<br />
-        <em>Tools:</em> Python, NumPy, Pandas, MS SQL, Power BI, Git & GitHub, Scrum.
-      </li>
-      <li>
-        <strong>Customer Churn Prediction for Telecom Company</strong><br />
-        Developed predictive models to forecast customer churn and suggest retention strategies.<br />
-        <em>Tools:</em> Python, Scikit-Learn, MS SQL, Power BI, Git & GitHub, Scrum.
-      </li>
-      <li>
-        <strong>Time Series Forecasting of Grocery Store Sales</strong><br />
-        Applied advanced time series techniques to analyze trends and forecast revenue.<br />
-        <em>Tools:</em> Python, Pandas, Scikit-Learn, MS SQL, Power BI.
-      </li>
-      <li>
-        <strong>Machine Learning Model GUIs with Streamlit</strong><br />
-        Built interactive web applications allowing users to engage with ML models.<br />
-        <em>Tools:</em> Python, Streamlit, Scikit-Learn, Power BI.
-      </li>
-      <li>
-        <strong>API Development for ML Applications</strong><br />
-        Created machine learning backend APIs with FastAPI and deployed using Docker.<br />
-        <em>Tools:</em> Python, FastAPI, Docker, Git & GitHub.
-      </li>
-      <li>
-        <strong>Final Capstone: Customer Churn Prediction Challenge</strong><br />
-        Designed and deployed a predictive ML app for a leading African telecom provider.<br />
-        <em>Tools:</em> Python, Streamlit, FastAPI, Docker, Git & GitHub.
-      </li>
+    <ul>
+      <li><strong>Indian Start-Up Ecosystem Analysis:</strong> Performed data cleaning, dashboarding, and descriptive analytics using Python, Power BI, and SQL.</li>
+      <li><strong>Customer Churn Prediction for Telecom:</strong> Built predictive models using Scikit-Learn to improve customer retention strategies.</li>
+      <li><strong>Grocery Sales Forecasting:</strong> Conducted time series forecasting for sales revenue using advanced modeling techniques.</li>
+      <li><strong>ML GUI Apps:</strong> Built interactive machine learning apps using Streamlit.</li>
+      <li><strong>API for ML Apps:</strong> Created and deployed FastAPI back-ends for machine learning applications using Docker.</li>
+      <li><strong>Capstone Project:</strong> Developed a full-stack application to predict customer churn for a telecom company in Africa.</li>
     </ul>
   </section>
 
   <section>
-    <h2>Experience</h2>
-    <ul class="experience">
-      <li>
-        <strong>Health Information Data Analyst</strong> – Gracepark Hospital, Kenya<br />
-        <em>March 2021 – Present (Various roles held)</em>
-        <ul>
-          <li>Analyze and manage healthcare datasets to improve patient outcomes and operational efficiency.</li>
-          <li>Develop and maintain dashboards and reports for clinical and administrative stakeholders using Power BI and Excel.</li>
-          <li>Extract, transform, and load (ETL) data from multiple sources using SQL queries and Python scripting.</li>
-          <li>Collaborate with clinical teams to translate data into actionable insights and support decision-making.</li>
-          <li>Implement data quality checks and ensure compliance with health information regulations and standards.</li>
-          <li>Automate routine reporting processes to reduce manual workload and improve accuracy.</li>
-          <li>Assist in designing APIs and tools to integrate hospital data systems for seamless information flow.</li>
-          <li>Participate in cross-functional agile teams to deliver data-driven solutions.</li>
-        </ul>
-      </li>
+    <h2>Work Experience</h2>
+    <p><strong>Data Analyst</strong><br>
+    Gracepark Medical Centre, Kenya | March 2021 – Present</p>
+    <ul>
+      <li>Analyzed clinical data to quantify morbidity and mortality rates with 100% accuracy for local healthcare authorities</li>
+      <li>Improved staff performance by 30% through workload analysis and optimization</li>
+      <li>Analyzed patient data to drive targeted marketing, resulting in 100% growth in daily patient visits</li>
+      <li>Reduced insurance preauthorization rejections by 70% through data analysis and process improvement</li>
+      <li>Established daily and monthly billing averages for insurance providers with 90%+ accuracy</li>
+      <li>Implemented data-driven fraud detection processes, reducing fraudulent claims by 20%</li>
+      <li>Conducted insurance payment analysis to identify debt patterns and recommend strategic actions</li>
+      <li>Analyzed revenue trends across daily, weekly, and monthly periods to support timely business decisions</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Education and Certifications</h2>
+    <ul>
+      <li><strong>Data Science and Data Analytics</strong> – Azubi Africa, Greater Accra, Ghana | September 2023 – August 2024</li>
+      <li><strong>BSc. Health Records & Information Management</strong> – Kenyatta University, Nairobi, Kenya | August 2016 – December 2020</li>
+      <li><strong>Certificate in Leadership</strong> – Kenyatta University, Nairobi, Kenya | September 2019 – December 2020</li>
     </ul>
   </section>
 </body>
