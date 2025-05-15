@@ -2,99 +2,218 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Denis Murithi Gitobu - Data Analyst Resume</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Denis Murithi Gitobu - Data Analyst</title>
   <style>
+    /* Reset & base */
+    * {
+      box-sizing: border-box;
+    }
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 20px;
-      background: #f9f9f9;
-      color: #333;
+      background-color: #1a1a1a;
+      color: #e0e0e0;
+      margin: 0;
+      padding: 0 20px 40px;
       line-height: 1.6;
     }
-    h1 {
-      font-size: 2.8rem;
-      margin-bottom: 0.2rem;
-      color: #2c3e50;
+    a {
+      color: #00b894;
+      text-decoration: none;
     }
-    h2 {
-      border-bottom: 2px solid #3498db;
-      padding-bottom: 6px;
-      margin-top: 40px;
-      color: #2980b9;
+    a:hover {
+      text-decoration: underline;
     }
-    p.summary {
-      font-size: 1.1rem;
-      color: #555;
-      max-width: 700px;
+    header {
+      text-align: center;
+      padding: 40px 20px 20px;
+      border-bottom: 2px solid #00b894;
+      margin-bottom: 30px;
     }
-    ul {
-      list-style-type: none;
-      padding-left: 0;
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+      font-weight: 900;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #00b894;
     }
-    ul.skills li, ul.education li, ul.projects li {
-      background: #fff;
-      margin-bottom: 12px;
-      padding: 12px 20px;
-      border-radius: 6px;
-      box-shadow: 0 2px 4px rgb(0 0 0 / 0.05);
-    }
-    ul.skills li strong, ul.projects li strong {
-      color: #2c3e50;
-    }
-    ul.projects li {
-      line-height: 1.4;
+    header p {
+      font-size: 1.2rem;
+      margin: 5px 0 0;
+      font-weight: 600;
+      color: #aaa;
     }
     section {
-      margin-bottom: 30px;
+      max-width: 900px;
+      margin: 0 auto 40px;
+      padding: 0 20px;
+    }
+    h2 {
+      border-left: 5px solid #00b894;
+      padding-left: 10px;
+      margin-bottom: 15px;
+      font-size: 1.8rem;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: #00b894;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    ul.skills li,
+    ul.projects li,
+    ul.experience li,
+    ul.education li {
+      background: #222;
+      margin-bottom: 12px;
+      padding: 12px 15px;
+      border-radius: 6px;
+      box-shadow: 1px 1px 6px rgba(0, 184, 148, 0.3);
+    }
+    ul.skills li {
+      font-weight: 600;
+    }
+    ul.skills li strong {
+      color: #00b894;
+    }
+    ul.projects li strong,
+    ul.experience li strong,
+    ul.education li strong {
+      color: #00d28d;
+    }
+    ul.projects li,
+    ul.experience li {
+      line-height: 1.4;
+    }
+    ul.experience ul {
+      margin-top: 8px;
+      margin-left: 15px;
+      list-style: disc;
+      color: #bbb;
+    }
+    ul.experience ul li {
+      background: none;
+      box-shadow: none;
+      padding: 4px 0;
+      font-weight: 400;
+    }
+    .contact-info {
+      text-align: center;
+      margin-top: 15px;
+      font-weight: 600;
+      font-size: 1rem;
+    }
+    .contact-info a {
+      display: inline-block;
+      margin: 0 15px;
+    }
+    /* Responsive */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+      h2 {
+        font-size: 1.5rem;
+      }
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Denis Murithi Gitobu</h1>
-    <p class="summary">
-      Data Analyst skilled in leveraging Python, SQL, and modern data visualization tools to deliver actionable business insights. Experienced in predictive analytics, API development, and deploying machine learning models. Adept in agile methodologies and collaboration tools to manage and deliver complex data projects.
-    </p>
+    <p>Health Information Data Analyst | Data Analytics Professional</p>
+    <div class="contact-info">
+      <a href="tel:+254713089201">📞 +254 713 089 201</a>
+      <a href="tel:+254747089201">📞 +254 747 089 201</a>
+      <a href="mailto:iamdenis46@gmail.com">✉ iamdenis46@gmail.com</a>
+    </div>
+    <div class="contact-info" style="margin-top: 5px;">
+      <a href="https://github.com/murithidenisgitobu" target="_blank" rel="noopener">GitHub</a> |
+      <a href="https://www.linkedin.com/in/murithidenisgitobu/" target="_blank" rel="noopener">LinkedIn</a> |
+      <a href="https://medium.com/@murithidenisgitobu" target="_blank" rel="noopener">Medium</a>
+    </div>
   </header>
 
   <section>
     <h2>Core Skills</h2>
     <ul class="skills">
-      <li><strong>Python:</strong> Data analysis, machine learning, automation</li>
-      <li><strong>SQL:</strong> MySQL, MS SQL – data querying and reporting</li>
+      <li><strong>Python:</strong> Data analysis, automation, scripting</li>
+      <li><strong>SQL:</strong> Data extraction, transformation, reporting (MySQL, MS SQL)</li>
       <li><strong>Data Visualization:</strong> Power BI, Tableau</li>
       <li><strong>Microsoft Excel:</strong> Advanced analytics, pivot tables, dashboards</li>
-      <li><strong>API Development:</strong> RESTful APIs with FastAPI</li>
+      <li><strong>API Development:</strong> RESTful services for data integration (FastAPI)</li>
       <li><strong>Containerization:</strong> Docker for scalable deployment</li>
-      <li><strong>Data Storytelling:</strong> Presenting actionable insights</li>
-      <li><strong>Predictive Analytics:</strong> Machine learning models for forecasting</li>
+      <li><strong>Data Storytelling:</strong> Presenting insights for business impact</li>
+      <li><strong>Predictive Analytics:</strong> Machine learning for forecasting (Scikit-Learn)</li>
       <li><strong>Time Series Analysis:</strong> Trends, seasonality, forecasting</li>
-      <li><strong>Streamlit:</strong> Interactive ML web applications</li>
-      <li><strong>Version Control:</strong> Git & GitHub</li>
-      <li><strong>Project Management:</strong> Scrum & Kanban Agile methodologies</li>
-      <li><strong>Tools:</strong> Jupyter Lab, VS Code, Pandas, NumPy, Scikit-Learn</li>
+      <li><strong>Project & Workflow Tools:</strong> Scrum, Git & GitHub, JupyterLab, VSCode</li>
+      <li><strong>App Development:</strong> Streamlit for interactive ML apps</li>
     </ul>
   </section>
 
   <section>
     <h2>Education</h2>
     <ul class="education">
-      <li><strong>Bachelor’s Degree:</strong> Health Records and Information Management – Kenyatta University, Kenya</li>
-      <li><strong>Data Analytics Professional:</strong> Azubi Africa, Greater Accra, Ghana</li>
+      <li><strong>Bachelor's Degree in Health Records and Information Management</strong><br />Kenyatta University, Kenya</li>
+      <li><strong>Data Analytics Professional Certificate</strong><br />Azubi Africa, Greater Accra, Ghana</li>
     </ul>
   </section>
 
   <section>
     <h2>Notable Projects</h2>
     <ul class="projects">
-      <li><strong>Indian Start-Up Ecosystem Data Analysis:</strong> Conducted data cleaning, descriptive analysis, and dashboarding to extract actionable insights using Python, Pandas, SQL, and Power BI.</li>
-      <li><strong>Customer Churn Prediction for Telecom:</strong> Developed predictive models using machine learning to forecast and reduce customer churn, leveraging Scikit-Learn and Power BI for visualization.</li>
-      <li><strong>Sales Revenue Forecasting for Grocery Store:</strong> Applied advanced time series techniques to analyze sales trends and forecast future revenue using Python and SQL.</li>
-      <li><strong>Machine Learning Model Deployment with Streamlit:</strong> Built interactive web applications enabling users to interact with ML models seamlessly.</li>
-      <li><strong>API Development for ML Applications:</strong> Created RESTful back-end APIs using FastAPI and deployed with Docker containers for scalability.</li>
-      <li><strong>Capstone - Customer Churn Prediction Challenge:</strong> Designed and deployed a complete machine learning solution predicting churn likelihood for a major African telecommunications company.</li>
+      <li>
+        <strong>Data Analysis Project on the Indian Start-Up Ecosystem</strong><br />
+        Conducted data cleaning, descriptive analytics, and dashboarding to extract valuable insights.<br />
+        <em>Tools:</em> Python, NumPy, Pandas, MS SQL, Power BI, Git & GitHub, Scrum.
+      </li>
+      <li>
+        <strong>Customer Churn Prediction for Telecom Company</strong><br />
+        Developed predictive models to forecast customer churn and suggest retention strategies.<br />
+        <em>Tools:</em> Python, Scikit-Learn, MS SQL, Power BI, Git & GitHub, Scrum.
+      </li>
+      <li>
+        <strong>Time Series Forecasting of Grocery Store Sales</strong><br />
+        Applied advanced time series techniques to analyze trends and forecast revenue.<br />
+        <em>Tools:</em> Python, Pandas, Scikit-Learn, MS SQL, Power BI.
+      </li>
+      <li>
+        <strong>Machine Learning Model GUIs with Streamlit</strong><br />
+        Built interactive web applications allowing users to engage with ML models.<br />
+        <em>Tools:</em> Python, Streamlit, Scikit-Learn, Power BI.
+      </li>
+      <li>
+        <strong>API Development for ML Applications</strong><br />
+        Created machine learning backend APIs with FastAPI and deployed using Docker.<br />
+        <em>Tools:</em> Python, FastAPI, Docker, Git & GitHub.
+      </li>
+      <li>
+        <strong>Final Capstone: Customer Churn Prediction Challenge</strong><br />
+        Designed and deployed a predictive ML app for a leading African telecom provider.<br />
+        <em>Tools:</em> Python, Streamlit, FastAPI, Docker, Git & GitHub.
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Experience</h2>
+    <ul class="experience">
+      <li>
+        <strong>Health Information Data Analyst</strong> – Gracepark Hospital, Kenya<br />
+        <em>March 2021 – Present (Various roles held)</em>
+        <ul>
+          <li>Analyze and manage healthcare datasets to improve patient outcomes and operational efficiency.</li>
+          <li>Develop and maintain dashboards and reports for clinical and administrative stakeholders using Power BI and Excel.</li>
+          <li>Extract, transform, and load (ETL) data from multiple sources using SQL queries and Python scripting.</li>
+          <li>Collaborate with clinical teams to translate data into actionable insights and support decision-making.</li>
+          <li>Implement data quality checks and ensure compliance with health information regulations and standards.</li>
+          <li>Automate routine reporting processes to reduce manual workload and improve accuracy.</li>
+          <li>Assist in designing APIs and tools to integrate hospital data systems for seamless information flow.</li>
+          <li>Participate in cross-functional agile teams to deliver data-driven solutions.</li>
+        </ul>
+      </li>
     </ul>
   </section>
 </body>
