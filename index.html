@@ -4,121 +4,314 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Denis Murithi Gitobu - Data Analyst</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 40px;
-      background-color: #eaf3f7;
-      color: #222;
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(135deg, #1e2a44 0%, #2c3e50 100%);
+      color: #333;
+      line-height: 1.6;
+      padding: 20px;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      overflow: hidden;
     }
     header {
-      background-color: #007c91;
-      color: white;
-      padding: 20px;
+      background: #1a2a44;
+      color: #fff;
       text-align: center;
-      border-radius: 10px;
+      padding: 40px 20px;
+      position: relative;
     }
-    h1 {
-      margin: 0;
-      font-size: 2.5em;
+    header h1 {
+      font-size: 2.8em;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
     }
-    section {
-      background: white;
-      margin: 20px auto;
-      padding: 20px;
-      border-radius: 10px;
-      max-width: 900px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    header p {
+      font-size: 1.2em;
+      opacity: 0.9;
     }
-    ul {
-      list-style-type: square;
-      padding-left: 20px;
+    .contact {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 20px;
     }
     .contact a {
-      display: block;
-      color: white;
-      margin-bottom: 5px;
+      color: #e74c3c;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 600;
+      transition: color 0.3s;
     }
     .contact a:hover {
-      text-decoration: underline;
-      color: #cce7ed;
+      color: #fff;
+    }
+    .contact i {
+      margin-right: 8px;
+    }
+    section {
+      padding: 30px;
+      border-bottom: 1px solid #eee;
+    }
+    section:last-child {
+      border-bottom: none;
+    }
+    h2 {
+      color: #1a2a44;
+      font-size: 1.8em;
+      margin-bottom: 20px;
+      position: relative;
+      display: inline-block;
+    }
+    h2::after {
+      content: '';
+      width: 50px;
+      height: 3px;
+      background: #e74c3c;
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+    }
+    ul {
+      list-style: none;
+      margin-top: 10px;
+    }
+    ul li {
+      margin-bottom: 10px;
+      position: relative;
+      padding-left: 25px;
+    }
+    ul li::before {
+      content: '▸';
+      color: #e74c3c;
+      position: absolute;
+      left: 0;
+      top: 2px;
+    }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .skill-item {
+      background: #f5f5f5;
+      padding: 15px;
+      border-radius: 8px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    .skill-item:hover {
+      transform: translateY(-5px);
+    }
+    .skill-bar {
+      background: #ddd;
+      height: 10px;
+      border-radius: 5px;
+      margin-top: 10px;
+      overflow: hidden;
+    }
+    .skill-bar div {
+      background: #e74c3c;
+      height: 100%;
+      width: 0;
+      transition: width 1s ease-in-out;
+    }
+    .download-btn {
+      display: inline-block;
+      background: #e74c3c;
+      color: #fff;
+      padding: 12px 25px;
+      text-decoration: none;
+      border-radius: 25px;
+      margin: 20px auto;
+      text-align: center;
+      transition: background 0.3s;
+    }
+    .download-btn:hover {
+      background: #c0392b;
+    }
+    .lang-toggle {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: #e74c3c;
+      color: #fff;
+      padding: 8px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 0.9em;
+    }
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2em;
+      }
+      .contact {
+        flex-direction: column;
+        align-items: center;
+      }
+      .skills-grid {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Denis Murithi Gitobu</h1>
-    <p>Data Analyst</p>
-    <div class="contact">
-      <a href="tel:+254713089201">📞 +254713089201</a>
-      <a href="tel:+254747089201">📞 +254747089201</a>
-      <a href="mailto:iamdenis46@gmail.com">✉️ iamdenis46@gmail.com</a>
-      <a href="https://github.com/murithidenisgitobu" target="_blank">GitHub: murithidenisgitobu</a>
-      <a href="https://www.linkedin.com/in/murithidenisgitobu/" target="_blank">LinkedIn: murithidenisgitobu</a>
-      <a href="https://medium.com/@murithidenisgitobu" target="_blank">Medium: @murithidenisgitobu</a>
-    </div>
-  </header>
+  <div class="container">
+    <header>
+      <div class="lang-toggle" onclick="toggleLanguage()">Swahili</div>
+      <h1 data-en="Denis Murithi Gitobu" data-sw="Denis Murithi Gitobu">Denis Murithi Gitobu</h1>
+      <p data-en="Data Analyst" data-sw="Mchambuzi wa Data">Data Analyst</p>
+      <div class="contact">
+        <a href="tel:+254713089201"><i class="fas fa-phone"></i>+254713089201</a>
+        <a href="tel:+254747089201"><i class="fas fa-phone"></i>+254747089201</a>
+        <a href="mailto:iamdenis46@gmail.com"><i class="fas fa-envelope"></i>iamdenis46@gmail.com</a>
+        <a href="https://github.com/murithidenisgitobu" target="_blank"><i class="fab fa-github"></i>GitHub</a>
+        <a href="https://www.linkedin.com/in/murithidenisgitobu/" target="_blank"><i class="fab fa-linkedin"></i>LinkedIn</a>
+        <a href="https://medium.com/@murithidenisgitobu" target="_blank"><i class="fab fa-medium"></i>Medium</a>
+      </div>
+    </header>
 
-  <section>
-    <h2>Professional Summary</h2>
-    <p>Results-driven Data Analyst with a strong foundation in data modeling, analytics, and dashboarding to support business strategy and decision-making. Experienced in Python, SQL, Excel, Power BI, Tableau, and Looker for building scalable solutions and extracting meaningful insights. Proven ability to translate complex data into actionable intelligence that drives efficiency, growth, and innovation across diverse sectors.</p>
-  </section>
+    <section>
+      <h2 data-en="Professional Summary" data-sw="Muhtasari wa Kitaalamu">Professional Summary</h2>
+      <p data-en="Results-driven Data Analyst with over 4 years of experience in data modeling, analytics, and visualization to drive business strategy. Proficient in Python, SQL, Power BI, and Tableau, delivering actionable insights for growth and efficiency. Skilled in predictive analytics and machine learning, with a proven track record in optimizing operations and enhancing decision-making across industries." data-sw="Mchambuzi wa Data anayeongozwa na matokeo na uzoefu wa zaidi ya miaka 4 katika uchukuzi wa data, uchambuzi, na taswira ili kuongoza mkakati wa Biashara. Mwenye ujuzi katika Python, SQL, Power BI, na Tableau, akitoa maarifa yanayoweza kuchukuliwa kwa ajili ya ukuaji na ufanisi. Mwenye ujuzi katika uchambuzi wa ubashiri na ujifunzaji wa Mashine, na rekodi iliyothibitishwa ya kuboresha Operesheni na kuimarisha maamuzi katika sekta mbalimbali.">
+        Results-driven Data Analyst with over 4 years of experience in data modeling, analytics, and visualization to drive business strategy. Proficient in Python, SQL, Power BI, and Tableau, delivering actionable insights for growth and efficiency. Skilled in predictive analytics and machine learning, with a proven track record in optimizing operations and enhancing decision-making across industries.
+      </p>
+    </section>
 
-  <section>
-    <h2>Core Skills</h2>
-    <ul>
-      <li>Python – Data analysis, automation, and scripting</li>
-      <li>SQL – Data extraction, transformation, and reporting (MySQL & MS SQL)</li>
-      <li>Data Visualization – Power BI, Tableau, Looker</li>
-      <li>Microsoft Excel – Advanced analytics, pivot tables, and dashboards</li>
-      <li>API Development – FastAPI, RESTful services for data integration</li>
-      <li>Containerization – Docker for scalable deployment</li>
-      <li>Data Storytelling – Presenting insights for business impact</li>
-      <li>Predictive Analytics – Machine learning for forecasting (Scikit-Learn)</li>
-      <li>Time Series Analysis – Trends, seasonality, and forecasting</li>
-      <li>App Development – Streamlit for interactive dashboards</li>
-      <li>Version Control – Git & GitHub</li>
-      <li>Scrum & Agile Methodologies</li>
-    </ul>
-  </section>
+    <section>
+      <h2 data-en="Core Skills" data-sw="Ujuzi za Msingi">Core Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-item">
+          <span>Python</span>
+          <div class="skill-bar"><div style="width: 95%"></div></div>
+        </div>
+        <div class="skill-item">
+          <span>SQL</span>
+          <div class="skill-bar"><div style="width: 90%"></div></div>
+        </div>
+        <div class="skill-item">
+          <span>Power BI</span>
+          <div class="skill-bar"><div style="width: 85%"></div></div>
+        </div>
+        <div class="skill-item">
+          <span>Tableau</span>
+          <div class="skill-bar"><div style="width: 85%"></div></div>
+        </div>
+        <div class="skill-item">
+          <span>Machine Learning</span>
+          <div class="skill-bar"><div style="width: 80%"></div></div>
+        </div>
+        <div class="skill-item">
+          <span>Docker</span>
+          <div class="skill-bar"><div style="width: 75%"></div></div>
+        </div>
+        <div class="skill-item">
+          <span>FastAPI</span>
+          <div class="skill-bar"><div style="width: 70%"></div></div>
+        </div>
+        <div class="skill-item">
+          <span>Streamlit</span>
+          <div class="skill-bar"><div style="width: 70%"></div></div>
+        </div>
+      </div>
+    </section>
 
-  <section>
-    <h2>Notable Projects</h2>
-    <ul>
-      <li><strong>Indian Start-Up Ecosystem Analysis:</strong> Performed data cleaning, dashboarding, and descriptive analytics using Python, Power BI, and SQL.</li>
-      <li><strong>Customer Churn Prediction for Telecom:</strong> Built predictive models using Scikit-Learn to improve customer retention strategies.</li>
-      <li><strong>Grocery Sales Forecasting:</strong> Conducted time series forecasting for sales revenue using advanced modeling techniques.</li>
-      <li><strong>ML GUI Apps:</strong> Built interactive machine learning apps using Streamlit.</li>
-      <li><strong>API for ML Apps:</strong> Created and deployed FastAPI back-ends for machine learning applications using Docker.</li>
-      <li><strong>Capstone Project:</strong> Developed a full-stack application to predict customer churn for a telecom company in Africa.</li>
-    </ul>
-  </section>
+    <section>
+      <h2 data-en="Notable Projects" data-sw="Miradi ya Kuangazia">Notable Projects</h2>
+      <ul>
+        <li data-en="<strong>Indian Start-Up Ecosystem Analysis:</strong> Cleaned and analyzed data using Python and SQL, creating interactive Power BI dashboards to highlight investment trends." data-sw="<strong>Uchambuzi wa Mfumo wa Biashara za Kuanzisha za India:</strong> Kusafishwa na Kuchambua data kwa kutumia Python na SQL, kuunda dashibodi za Power BI zinazoingiliana ili kuangazia mwenendo wa uwekezaji.">
+          <strong>Indian Start-Up Ecosystem Analysis:</strong> Cleaned and analyzed data using Python and SQL, creating interactive Power BI dashboards to highlight investment trends.
+        </li>
+        <li data-en="<strong>Customer Churn Prediction:</strong> Developed machine learning models with Scikit-Learn to predict telecom customer churn, improving retention by 15%." data-sw="<strong>Tabiri ya Kupoteza Wateja:</strong> Iliyotengenezwa miundo ya kujifunza ya Mashine na Scikit-Learn ili kutabiri Kupoteza wateja wa Telecom, kuboresha uhifadhi kwa 15%.">
+          <strong>Customer Churn Prediction:</strong> Developed machine learning models with Scikit-Learn to predict telecom customer churn, improving retention by 15%.
+        </li>
+        <li data-en="<strong>Grocery Sales Forecasting:</strong> Applied time series analysis to forecast sales, optimizing inventory management for a retail chain." data-sw="<strong>Tabiri ya Mauzo ya Mboga:</strong> Iliyotumika uchambuzi wa mfululizo wa Muda ili kutabiri mauzo, kuboresha usimamizi wa hesabu kwa Mnyororo wa Rejareja.">
+          <strong>Grocery Sales Forecasting:</strong> Applied time series analysis to forecast sales, optimizing inventory management for a retail chain.
+        </li>
+        <li data-en="<strong>ML App with Streamlit:</strong> Built an interactive ML app for real-time data predictions, deployed with FastAPI and Docker." data-sw="<strong>Programu ya ML na Streamlit:</strong> Iliyojengwa programu ya ML inayoingiliana kwa utabiri wa data wa wakati halisi, iliyotumwa na FastAPI na Docker.">
+          <strong>ML App with Streamlit:</strong> Built an interactive ML app for real-time data predictions, deployed with FastAPI and Docker.
+        </li>
+      </ul>
+    </section>
 
-  <section>
-    <h2>Work Experience</h2>
-    <p><strong>Data Analyst</strong><br>
-    Gracepark Medical Centre, Kenya | March 2021 – Present</p>
-    <ul>
-      <li>Developed business intelligence dashboards to visualize financial and operational KPIs.</li>
-      <li>Improved staff efficiency by 30% through workload analysis and resource allocation optimization.</li>
-      <li>Performed marketing data analysis that doubled daily client acquisition.</li>
-      <li>Reduced preauthorization rejections by 70% through process and data validation improvements.</li>
-      <li>Built financial models and established accurate billing and revenue tracking systems.</li>
-      <li>Implemented fraud detection analytics to reduce suspicious claims by 20% in one quarter.</li>
-      <li>Performed payment reconciliation and revenue trend analysis to support executive reporting.</li>
-      <li>Collaborated cross-functionally to deliver data solutions for strategic initiatives.</li>
-    </ul>
-  </section>
+    <section>
+      <h2 data-en="Work Experience" data-sw="Uzoefu wa Kazi">Work Experience</h2>
+      <p><strong data-en="Data Analyst" data-sw="Mchambuzi wa Data">Data Analyst</strong><br>
+      Gracepark Medical Centre, Kenya | March 2021 – Present</p>
+      <ul>
+        <li data-en="Designed Power BI dashboards to track financial and operational KPIs, enhancing strategic planning." data-sw="Iliyoundwa dashibodi za Power BI ili kufuatilia KPI za kifedha na za uendeshaji, kuboresha mipango ya kimkakati.">
+          Designed Power BI dashboards to track financial and operational KPIs, enhancing strategic planning.
+        </li>
+        <li data-en="Optimized staff scheduling through workload analysis, increasing efficiency by 30%." data-sw="Iliyoboreshwa upangaji wa wafanyakazi kupitia uchambuzi wa mzigo wa kazi, kuongeza ufanisi kwa 30%.">
+          Optimized staff scheduling through workload analysis, increasing efficiency by 30%.
+        </li>
+        <li data-en="Conducted marketing analytics, doubling daily client acquisition through targeted campaigns." data-sw="Iliyofanya uchambuzi wa Masoko, kuongeza mara mbili upatikanaji wa wateja wa kila siku kupitia Kampeni Zilizolengwa.">
+          Conducted marketing analytics, doubling daily client acquisition through targeted campaigns.
+        </li>
+        <li data-en="Reduced preauthorization rejections by 70% through data-driven process improvements." data-sw="Iliyopunguza kukataliwa kwa idhini ya awali kwa 70% kupitia maboresho ya mchakato yanayoendeshwa na data.">
+          Reduced preauthorization rejections by 70% through data-driven process improvements.
+        </li>
+        <li data-en="Implemented fraud detection models, cutting suspicious claims by 20% in one quarter." data-sw="Iliyotekeleza miundo ya uchunguzi wa udanganyifu, ikipunguza madai yanayoshukiwa kwa 20% katika robo moja.">
+          Implemented fraud detection models, cutting suspicious claims by 20% in one quarter.
+        </li>
+      </ul>
+    </section>
 
-  <section>
-    <h2>Education and Certifications</h2>
-    <ul>
-      <li><strong>Data Science and Data Analytics</strong> – Azubi Africa, Greater Accra, Ghana | September 2023 – August 2024</li>
-      <li><strong>BSc. Health Records & Information Management</strong> – Kenyatta University, Nairobi, Kenya | August 2016 – December 2020</li>
-      <li><strong>Certificate in Leadership</strong> – Kenyatta University, Nairobi, Kenya | September 2019 – December 2020</li>
-    </ul>
-  </section>
+    <section>
+      <h2 data-en="Education and Certifications" data-sw="Elimu na Vyeti">Education and Certifications</h2>
+      <ul>
+        <li data-en="<strong>Data Science and Data Analytics</strong> – Azubi Africa, Greater Accra, Ghana | 2023 – 2024" data-sw="<strong>Sayansi ya Data na Uchambuzi wa Data</strong> – Azubi Africa, Greater Accra, Ghana | 2023 – 2024">
+          <strong>Data Science and Data Analytics</strong> – Azubi Africa, Greater Accra, Ghana | 2023 – 2024
+        </li>
+        <li data-en="<strong>BSc. Health Records & Information Management</strong> – Kenyatta University, Nairobi, Kenya | 2016 – 2020" data-sw="<strong>BSc. Rekodi za Afya na Usimamizi wa Taarifa</strong> – Chuo Kikuu cha Kenyatta, Nairobi, Kenya | 2016 – 2020">
+          <strong>BSc. Health Records & Information Management</strong> – Kenyatta University, Nairobi, Kenya | 2016 – 2020
+        </li>
+        <li data-en="<strong>Certificate in Leadership</strong> – Kenyatta University, Nairobi, Kenya | 2019 – 2020" data-sw="<strong>Cheti cha Uongozi</strong> – Chuo Kikuu cha Kenyatta, Nairobi, Kenya | 2019 – 2020">
+          <strong>Certificate in Leadership</strong> – Kenyatta University, Nairobi, Kenya | 2019 – 2020
+        </li>
+      </ul>
+    </section>
+
+    <section style="text-align: center;">
+      <a href="path/to/your/resume.pdf" class="download-btn" download>Download Resume PDF</a>
+    </section>
+  </div>
+
+  <script>
+    let isEnglish = true;
+    function toggleLanguage() {
+      isEnglish = !isEnglish;
+      const elements = document.querySelectorAll('[data-en], [data-sw]');
+      elements.forEach(el => {
+        el.innerHTML = isEnglish ? el.getAttribute('data-en') : el.getAttribute('data-sw');
+      });
+      document.querySelector('.lang-toggle').textContent = isEnglish ? 'Swahili' : 'English';
+    }
+
+    // Animate skill bars on page load
+    document.addEventListener('DOMContentLoaded', () => {
+      const bars = document.querySelectorAll('.skill-bar div');
+      bars.forEach(bar => {
+        const width = bar.style.width;
+        bar.style.width = '0';
+        setTimeout(() => {
+          bar.style.width = width;
+        }, 100);
+      });
+    });
+  </script>
 </body>
 </html>
