@@ -13,7 +13,7 @@
     }
     body {
       font-family: 'Montserrat', sans-serif;
-      background: linear-gradient(135deg, #1e2a44 0%, #2c3e50 100%);
+      background: linear-gradient(135deg, #1a2a44 0%, #2c3e50 100%);
       color: #333;
       line-height: 1.6;
       padding: 20px;
@@ -23,7 +23,7 @@
       margin: 0 auto;
       background: #fff;
       border-radius: 12px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
       overflow: hidden;
     }
     header {
@@ -32,26 +32,28 @@
       text-align: center;
       padding: 40px 20px;
       position: relative;
+      border-bottom: 4px solid #f39c12;
     }
     header h1 {
-      font-size: 2.8em;
+      font-size: 3em;
       margin-bottom: 10px;
       text-transform: uppercase;
-      letter-spacing: 2px;
+      letter-spacing: 3px;
+      font-weight: 700;
     }
     header p {
-      font-size: 1.2em;
+      font-size: 1.3em;
       opacity: 0.9;
     }
     .contact {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 15px;
+      gap: 20px;
       margin-top: 20px;
     }
     .contact a {
-      color: #e74c3c;
+      color: #f39c12;
       text-decoration: none;
       font-weight: 600;
       transition: color 0.3s;
@@ -60,7 +62,7 @@
       color: #fff;
     }
     .contact i {
-      margin-right: 8px;
+      margin-right: 10px;
     }
     section {
       padding: 30px;
@@ -71,16 +73,17 @@
     }
     h2 {
       color: #1a2a44;
-      font-size: 1.8em;
+      font-size: 2em;
       margin-bottom: 20px;
       position: relative;
       display: inline-block;
+      text-transform: uppercase;
     }
     h2::after {
       content: '';
-      width: 50px;
-      height: 3px;
-      background: #e74c3c;
+      width: 60px;
+      height: 4px;
+      background: #f39c12;
       position: absolute;
       bottom: -5px;
       left: 0;
@@ -90,16 +93,17 @@
       margin-top: 10px;
     }
     ul li {
-      margin-bottom: 10px;
+      margin-bottom: 12px;
       position: relative;
-      padding-left: 25px;
+      padding-left: 30px;
     }
     ul li::before {
       content: '▸';
-      color: #e74c3c;
+      color: #f39c12;
       position: absolute;
       left: 0;
       top: 2px;
+      font-size: 1.2em;
     }
     .skills-grid {
       display: grid;
@@ -112,51 +116,55 @@
       border-radius: 8px;
       text-align: center;
       transition: transform 0.3s;
+      border: 1px solid #ddd;
     }
     .skill-item:hover {
       transform: translateY(-5px);
+      border-color: #f39c12;
     }
     .skill-bar {
       background: #ddd;
-      height: 10px;
-      border-radius: 5px;
+      height: 12px;
+      border-radius: 6px;
       margin-top: 10px;
       overflow: hidden;
     }
     .skill-bar div {
-      background: #e74c3c;
+      background: #f39c12;
       height: 100%;
       width: 0;
       transition: width 1s ease-in-out;
     }
     .download-btn {
       display: inline-block;
-      background: #e74c3c;
+      background: #f39c12;
       color: #fff;
-      padding: 12px 25px;
+      padding: 12px 30px;
       text-decoration: none;
       border-radius: 25px;
       margin: 20px auto;
       text-align: center;
+      font-weight: 600;
       transition: background 0.3s;
     }
     .download-btn:hover {
-      background: #c0392b;
+      background: #e67e22;
     }
     .lang-toggle {
       position: absolute;
       top: 20px;
       right: 20px;
-      background: #e74c3c;
+      background: #f39c12;
       color: #fff;
       padding: 8px 15px;
       border-radius: 5px;
       cursor: pointer;
       font-size: 0.9em;
+      font-weight: 600;
     }
     @media (max-width: 768px) {
       header h1 {
-        font-size: 2em;
+        font-size: 2.2em;
       }
       .contact {
         flex-direction: column;
@@ -175,8 +183,7 @@
       <h1 data-en="Denis Murithi Gitobu" data-sw="Denis Murithi Gitobu">Denis Murithi Gitobu</h1>
       <p data-en="Data Analyst" data-sw="Mchambuzi wa Data">Data Analyst</p>
       <div class="contact">
-        <a href="tel:+254713089201"><i class="fas fa-phone"></i>+254713089201</a部分
-
+        <a href="tel:+254713089201"><i class="fas fa-phone"></i>+254713089201</a>
         <a href="tel:+254747089201"><i class="fas fa-phone"></i>+254747089201</a>
         <a href="mailto:iamdenis46@gmail.com"><i class="fas fa-envelope"></i>iamdenis46@gmail.com</a>
         <a href="https://github.com/murithidenisgitobu" target="_blank"><i class="fab fa-github"></i>GitHub</a>
@@ -187,8 +194,8 @@
 
     <section>
       <h2 data-en="Professional Summary" data-sw="Muhtasari wa Kitaalamu">Professional Summary</h2>
-      <p data-en="Accomplished Data Analyst with over 4 years of experience in data analysis, predictive modeling, and business intelligence. Proficient in Python, SQL, Power BI, Tableau, Google Looker Studio, and Excel, delivering data-driven insights to optimize insurance, financial, and operational performance. Skilled in machine learning, statistical analysis, and data storytelling, with a proven ability to enhance decision-making and drive business growth through actionable analytics." data-sw="Mchambuzi wa Data aliyefanikiwa na uzoefu wa zaidi ya miaka 4 katika uchambuzi wa data, uchukuzi wa ubashiri, na akili ya Biashara. Mwenye ujuzi katika Python, SQL, Power BI, Tableau, Google Looker Studio, na Excel, akitoa maarifa yanayoendeshwa na data ili kuboresha utendaji wa bima, kifedha, na uendeshaji. Mwenye ujuzi katika ujifunzaji wa Mashine, uchambuzi wa takwimu, na usimuliaji wa data, na uwezo uliothibitishwa wa kuimarisha maamuzi na kuendesha ukuaji wa Biashara kupitia uchambuzi unaoweza kuchukuliwa.">
-        Accomplished Data Analyst with over 4 years of experience in data analysis, predictive modeling, and business intelligence. Proficient in Python, SQL, Power BI, Tableau, Google Looker Studio, and Excel, delivering data-driven insights to optimize insurance, financial, and operational performance. Skilled in machine learning, statistical analysis, and data storytelling, with a proven ability to enhance decision-making and drive business growth through actionable analytics.
+      <p data-en="Dynamic Data Analyst with over 4 years of experience in health informatics, business intelligence, and predictive analytics. Expert in Python, SQL, Power BI, Tableau, Google Looker Studio, and Microsoft Excel, delivering actionable insights to optimize insurance, revenue, and patient flow. Skilled in statistical analysis, data storytelling, and stakeholder collaboration, driving a 100% increase in patient visits and 70% reduction in insurance rejections through data-driven strategies." data-sw="Mchambuzi wa Data mwenye nguvu na uzoefu wa zaidi ya miaka 4 katika habari za afya, akili ya Biashara, na uchambuzi wa ubashiri. Mtaalamu wa Python, SQL, Power BI, Tableau, Google Looker Studio, na Microsoft Excel, akitoa maarifa yanayoweza kuchukuliwa ili kuboresha bima, mapato, na mtiririko wa wagonjwa. Mwenye ujuzi katika uchambuzi wa takwimu, usimuliaji wa data, na ushirikiano na wadau, akiendesha ongezeko la 100% la ziara za wagonjwa na kupunguza 70% kwa kukataliwa kwa bima kupitia mikakati inayoendeshwa na data.">
+        Dynamic Data Analyst with over 4 years of experience in health informatics, business intelligence, and predictive analytics. Expert in Python, SQL, Power BI, Tableau, Google Looker Studio, and Microsoft Excel, delivering actionable insights to optimize insurance, revenue, and patient flow. Skilled in statistical analysis, data storytelling, and stakeholder collaboration, driving a 100% increase in patient visits and 70% reduction in insurance rejections through data-driven strategies.
       </p>
     </section>
 
@@ -248,12 +255,44 @@
     </section>
 
     <section>
+      <h2 data-en="Work Experience" data-sw="Uzoefu wa Kazi">Work Experience</h2>
+      <p><strong data-en="Health Information Management Data Analyst" data-sw="Mchambuzi wa Data wa Usimamizi wa Habari za Afya">Health Information Management Data Analyst</strong><br>
+      Gracepark Medical Centre, Kenya | March 2021 – Present</p>
+      <ul>
+        <li data-en="Quantified clinical data to report morbidity and mortality rates with 100% accuracy for healthcare authorities." data-sw="Ilipima data ya kliniki ili kuripoti viwango vya ugonjwa na vifo kwa usahihi wa 100% kwa mamlaka za afya.">
+          Quantified clinical data to report morbidity and mortality rates with 100% accuracy for healthcare authorities.
+        </li>
+        <li data-en="Optimized staff performance by 30% through workload analysis and resource allocation improvements." data-sw="Iliboresha utendaji wa wafanyakazi kwa 30% kupitia uchambuzi wa mzigo wa kazi na maboresho ya ugawaji wa rasilimali.">
+          Optimized staff performance by 30% through workload analysis and resource allocation improvements.
+        </li>
+        <li data-en="Drove 100% growth in daily patient visits (100 to 200+) through targeted marketing data analysis." data-sw="Iliongeza ukuaji wa 100% wa ziara za wagonjwa za kila siku (100 hadi 200+) kupitia uchambuzi wa data ya Masoko yaliyolengwa.">
+          Drove 100% growth in daily patient visits (100 to 200+) through targeted marketing data analysis.
+        </li>
+        <li data-en="Reduced insurance preauthorization rejections by 70% via data-driven process optimization." data-sw="Ilipunguza kukataliwa kwa idhini ya awali ya bima kwa 70% kupitia uboreshaji wa mchakato unaoendeshwa na data.">
+          Reduced insurance preauthorization rejections by 70% via data-driven process optimization.
+        </li>
+        <li data-en="Established daily and monthly billing averages for insurance providers with over 90% accuracy." data-sw="Ilianzisha wastani wa bili za kila siku na za kila mwezi kwa watoa huduma za bima kwa usahihi wa zaidi ya 90%.">
+          Established daily and monthly billing averages for insurance providers with over 90% accuracy.
+        </li>
+        <li data-en="Implemented fraud detection analytics, reducing fraudulent claims by 20% in one quarter." data-sw="Ilitekeleza uchambuzi wa uchunguzi wa udanganyifu, ikipunguza madai ya udanganyifu kwa 20% katika robo moja.">
+          Implemented fraud detection analytics, reducing fraudulent claims by 20% in one quarter.
+        </li>
+        <li data-en="Analyzed insurance payment and revenue trends to identify debt patterns and support strategic decisions." data-sw="Ilichambua mwenendo wa malipo ya bima na mapato ili kutambua mifumo ya deni na kusaidia maamuzi ya kimkakati.">
+          Analyzed insurance payment and revenue trends to identify debt patterns and support strategic decisions.
+        </li>
+        <li data-en="Generated business intelligence reports on insurance, income, and patient flow, improving strategic decision-making by 25%." data-sw="Ilitengeneza ripoti za akili ya Biashara juu ya bima, mapato, na mtiririko wa wagonjwa, ikaboresha maamuzi ya kimkakati kwa 25%.">
+          Generated business intelligence reports on insurance, income, and patient flow, improving strategic decision-making by 25%.
+        </li>
+      </ul>
+    </section>
+
+    <section>
       <h2 data-en="Projects" data-sw="Miradi">Projects</h2>
       <ul>
         <li data-en="<strong>Indian Start-Up Ecosystem Analysis:</strong> Performed data cleaning and statistical analysis using Python and SQL, creating Power BI dashboards to visualize investment trends." data-sw="<strong>Uchambuzi wa Mfumo wa Biashara za Kuanzisha za India:</strong> Ilifanya usafishaji wa data na uchambuzi wa takwimu kwa kutumia Python na SQL, ikaunda dashibodi za Power BI ili kuonyesha mwenendo wa uwekezaji.">
           <strong>Indian Start-Up Ecosystem Analysis:</strong> Performed data cleaning and statistical analysis using Python and SQL, creating Power BI dashboards to visualize investment trends.
         </li>
-        <li data-en="<strong>Customer Churn Prediction for Telecom:</strong> Built machine learning models with Scikit-Learn to predict customer churn, improving retention strategies by 15%." data-sw="<strong>Tab RUS iri ya Kupoteza Wateja wa Telecom:</strong> Ilitengeneza miundo ya kujifunza ya Mashine na Scikit-Learn ili kutabiri Kupoteza wateja, ikaboresha mikakati ya uhifadhi kwa 15%.">
+        <li data-en="<strong>Customer Churn Prediction for Telecom:</strong> Built machine learning models with Scikit-Learn to predict customer churn, improving retention strategies by 15%." data-sw="<strong>Tabiri ya Kupoteza Wateja wa Telecom:</strong> Ilitengeneza miundo ya kujifunza ya Mashine na Scikit-Learn ili kutabiri Kupoteza wateja, ikaboresha mikakati ya uhifadhi kwa 15%.">
           <strong>Customer Churn Prediction for Telecom:</strong> Built machine learning models with Scikit-Learn to predict customer churn, improving retention strategies by 15%.
         </li>
         <li data-en="<strong>Grocery Sales Forecasting:</strong> Conducted time series analysis to forecast sales revenue, optimizing inventory for a retail chain." data-sw="<strong>Tabiri ya Mauzo ya Mboga:</strong> Ilifanya uchambuzi wa mfululizo wa Muda ili kutabiri mapato ya mauzo, ikaboresha hesabu kwa Mnyororo wa Rejareja.">
@@ -267,32 +306,6 @@
         </li>
         <li data-en="<strong>Capstone Project:</strong> Built a full-stack application to predict customer churn for an African telecom, integrating Python, SQL, and Power BI." data-sw="<strong>Mradi wa Capstone:</strong> Ilitengeneza programu ya stack kamili ili kutabiri Kupoteza wateja kwa Telecom ya Afrika, ikijumuisha Python, SQL, na Power BI.">
           <strong>Capstone Project:</strong> Built a full-stack application to predict customer churn for an African telecom, integrating Python, SQL, and Power BI.
-        </li>
-      </ul>
-    </section>
-
-    <section>
-      <h2 data-en="Work Experience" data-sw="Uzoefu wa Kazi">Work Experience</h2>
-      <p><strong data-en="Data Analyst" data-sw="Mchambuzi wa Data">Data Analyst</strong><br>
-      Gracepark Medical Centre, Kenya | March 2021 – Present</p>
-      <ul>
-        <li data-en="Prepared reports to communicate insights in insurance, income, and patient flow, enhancing decision-making." data-sw="Iliandaa ripoti za kuwasilisha maarifa katika bima, mapato, na mtiririko wa wagonjwa, ikaimarisha maamuzi.">
-          Prepared reports to communicate insights in insurance, income, and patient flow, enhancing decision-making.
-        </li>
-        <li data-en="Developed predictive models to forecast patient demand, reducing scheduling errors by 25%." data-sw="Ilitengeneza miundo ya ubashiri ili kutabiri mahitaji ya wagonjwa, ikipunguza makosa ya upangaji kwa 25%.">
-          Developed predictive models to forecast patient demand, reducing scheduling errors by 25%.
-        </li>
-        <li data-en="Automated data processing workflows using Python, saving 15 hours of manual work weekly." data-sw="Ilifanya otomatiki ya michakato ya uchukuzi wa data kwa kutumia Python, ikiokoa masaa 15 ya kazi ya mikono kila wiki.">
-          Automated data processing workflows using Python, saving 15 hours of manual work weekly.
-        </li>
-        <li data-en="Conducted marketing data analysis, doubling daily client acquisition through targeted campaigns." data-sw="Ilifanya uchambuzi wa data ya Masoko, ikiongeza mara mbili upatikanaji wa wateja wa kila siku kupitia Kampeni Zilizolengwa.">
-          Conducted marketing data analysis, doubling daily client acquisition through targeted campaigns.
-        </li>
-        <li data-en="Reduced preauthorization rejections by 70% through data-driven process improvements." data-sw="Ilipunguza kukataliwa kwa idhini ya awali kwa 70% kupitia maboresho ya mchakato yanayoendeshwa na data.">
-          Reduced preauthorization rejections by 70% through data-driven process improvements.
-        </li>
-        <li data-en="Implemented fraud detection models, cutting suspicious claims by 20% in one quarter." data-sw="Ilitekeleza miundo ya uchunguzi wa udanganyifu, ikipunguza madai yanayoshukiwa kwa 20% katika robo moja.">
-          Implemented fraud detection models, cutting suspicious claims by 20% in one quarter.
         </li>
       </ul>
     </section>
